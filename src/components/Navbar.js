@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="nav-wrapper">
       <div className="container">
-        <a href="#!" class="brand-logo">
+        <a href="aloha babe" class="brand-logo">
           <i class="material-icons">filter_vintage</i>aloha babe
         </a>
         <ul class="right">

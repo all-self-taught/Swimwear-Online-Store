@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-//import { addShipping } from './actions/cartActions'
+import PayPalButton from "./PayPalButton";
+
 class Recipe extends Component {
   componentWillUnmount() {
     if (this.refs.shipping.checked) this.props.substractShipping();
@@ -32,9 +33,7 @@ class Recipe extends Component {
             <b>Total: {this.props.total} $</b>
           </li>
         </div>
-        <div className="checkout">
-          <button className="waves-effect waves-light btn">Checkout</button>
-        </div>
+        <PayPalButton total={this.props.total} />
       </div>
     );
   }

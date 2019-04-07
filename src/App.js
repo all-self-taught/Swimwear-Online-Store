@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import Cart from "./components/Cart";
 import Css from "./App.css";
 import Footer from "./components/Footer";
+// import Signup from "./components/Signup";
 
 class App extends Component {
   render() {

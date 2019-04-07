@@ -16,6 +16,7 @@ const Navbar = () => {
               <i className="material-icons">person</i>
             </Link>
           </li>
+
           <li>
             <Link to="/">
               <i className="material-icons">favorite</i>

@@ -28,7 +28,7 @@ const Footer = () => {
               <div id="social">
                 <a href="https://www.instagram.com/alohababe.co/?hl=en">
                   <img
-                    src="https://image.flaticon.com/icons/svg/733/733614.svg"
+                    src="https://image.flaticon.com/icons/svg/1384/1384015.svg"
                     alt="aloha babe insta"
                     height="30"
                   />

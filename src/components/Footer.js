@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <footer class="page-footer">
+    <footer class="page-footer #000000 black">
       <div class="container">
         <div class="col l4 offset-l2 s12">
-          <h5 class="black-text left">company</h5>
+          <h5 class="white-text left">company</h5>
           <br />
           <br />
           <ul>

@@ -1,8 +1,29 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { addToCart } from "./actions/cartActions";
+import Filter from "./Filter";
 
 class Home extends Component {
+  constructor() {
+    super();
+    this.state = {
+      sort: "",
+      items: [],
+      filteredProducts: []
+    };
+  }
+  listProducts = () => {
+    this.setState(state => {
+      if (state.sort !== "") {
+        state.items.sort((a, b) => (a.category > b.category ? 1 : -1));
+      }
+      return { filteredProducts: state.items };
+    });
+  };
+  handleSortChange = e => {
+    this.setState({ sort: e.target.value });
+    this.listProducts();
+  };
   handleClick = id => {
     this.props.addToCart(id);
   };
@@ -17,7 +38,7 @@ class Home extends Component {
                 <img src={item.img} />
                 <span
                   to="/"
-                  className="btn-floating halfway-fab waves-effect waves-light"
+                  className="btn-floating halfway-fab waves-effect waves-light #000000 black"
                   onClick={() => {
                     this.handleClick(item.id);
                   }}
@@ -55,6 +76,10 @@ class Home extends Component {
 
     return (
       <div className="container">
+        <Filter
+          count={this.state.filteredProducts.length}
+          handleSortChange={this.handleSortChange}
+        />
         <h3 className="center">swimwear</h3>
         <div className="box">{itemList}</div>
       </div>

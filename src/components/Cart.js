@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import {
   removeItem,
   addQuantity,
-  subtractQuantity
+  subtractQuantity,
+  clearCart
 } from "./actions/cartActions";
 import Recipe from "./Recipe";
 class Cart extends Component {
@@ -19,6 +20,9 @@ class Cart extends Component {
   //to substruct from the quantity
   handleSubtractQuantity = id => {
     this.props.subtractQuantity(id);
+  };
+  handleClearCart = id => {
+    this.props.clearCart(id);
   };
   render() {
     let addedItems = this.props.items.length ? (
@@ -61,7 +65,7 @@ class Cart extends Component {
                 </Link>
               </div>
               <button
-                className="waves-effect waves-light btn remove"
+                className="waves-effect waves-light btn"
                 onClick={() => {
                   this.handleRemove(item.id);
                 }}
@@ -103,6 +107,9 @@ const mapDispatchToProps = dispatch => {
     },
     subtractQuantity: id => {
       dispatch(subtractQuantity(id));
+    },
+    clearCart: id => {
+      dispatch(clearCart(id));
     }
   };
 };

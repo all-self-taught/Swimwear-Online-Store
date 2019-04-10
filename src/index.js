@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import RegisterServiceWorker from "./serviceWorker";
+import * as serviceWorker from "./serviceWorker";
 import "./index.css";
 import cartReducer from "./components/reducers/cartReducer";
 import { Provider } from "react-redux";
@@ -25,3 +25,4 @@ ReactDOM.render(
   </Provider>,
   document.getElementById("root")
 );
+serviceWorker.unregister();

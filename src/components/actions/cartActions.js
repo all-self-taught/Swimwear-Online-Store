@@ -35,9 +35,9 @@ export const addQuantity = id => {
     id
   };
 };
-export const clearCart = id => {
+export const clearCart = () => {
   return {
-    type: CLEAR_CART,
-    id
+    type: "CLEAR_CART",
+    payload: null
   };
 };

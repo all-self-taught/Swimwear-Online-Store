@@ -1,11 +1,15 @@
 import React from "react";
 import PaypalBtn from "react-paypal-checkout";
+import { Link } from "react-router-dom";
 
 export default class MyApp extends React.Component {
   render() {
     const onSuccess = payment => {
       // Congratulation, it came here means everything's fine!
       console.log("The payment was succeeded!", payment);
+
+      this.props.clearCart();
+      this.props.history.push("/shop");
     };
 
     const onCancel = data => {

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import PayPalButton from "./PayPalButton";
 
-class Recipe extends Component {
+class Order extends Component {
   componentWillUnmount() {
     if (this.refs.shipping.checked) this.props.substractShipping();
   }
@@ -33,7 +33,11 @@ class Recipe extends Component {
             <b>Total: {this.props.total} $</b>
           </li>
         </div>
-        <PayPalButton total={this.props.total} />
+        <PayPalButton
+          total={this.props.total}
+          history={this.props.history}
+          clearCart={this.props.clearCart}
+        />
       </div>
     );
   }
@@ -60,4 +64,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Recipe);
+)(Order);

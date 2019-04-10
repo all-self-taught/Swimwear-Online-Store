@@ -7,7 +7,7 @@ import {
   subtractQuantity,
   clearCart
 } from "./actions/cartActions";
-import Recipe from "./Recipe";
+import Order from "./Order";
 class Cart extends Component {
   //to remove the item completely
   handleRemove = id => {
@@ -21,8 +21,8 @@ class Cart extends Component {
   handleSubtractQuantity = id => {
     this.props.subtractQuantity(id);
   };
-  handleClearCart = id => {
-    this.props.clearCart(id);
+  handleClearCart = item => {
+    this.props.clearCart(item);
   };
   render() {
     let addedItems = this.props.items.length ? (
@@ -85,7 +85,7 @@ class Cart extends Component {
           <h5>You have ordered:</h5>
           <ul className="collection">{addedItems}</ul>
         </div>
-        <Recipe />
+        <Order />
       </div>
     );
   }

@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { addToCart } from "./actions/cartActions";
 import Filter from "./Filter";
 
-class Home extends Component {
+class Shop extends Component {
   constructor() {
     super();
     this.state = {
@@ -102,4 +102,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Home);
+)(Shop);

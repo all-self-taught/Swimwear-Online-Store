@@ -4,12 +4,12 @@ const Navbar = () => {
   return (
     <nav class="nav-wrapper #000000 black">
       <div class="container">
-        <Link to="#!" class="brand-logo">
-          <i class="material-icons">filter_vintage</i>aloha babe
-        </Link>
+        <div class="brand-logo">
+          <i class="small material-icons">filter_vintage</i>aloha babe
+        </div>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li>
-            <Link to="/">Shop Swim</Link>
+            <Link to="/Shop">Shop Swim</Link>
           </li>
           <li>
             <Link to="/">

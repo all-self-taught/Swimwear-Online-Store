@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+import LandingPage from "./components/LandingPage";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
+import Shop from "./components/Shop";
 import Cart from "./components/Cart";
 import Css from "./App.css";
 import Footer from "./components/Footer";
@@ -15,7 +16,8 @@ class App extends Component {
         <div className="App">
           <Navbar />
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" component={LandingPage} />
+            <Route path="/shop" component={Shop} />
             <Route path="/cart" component={Cart} />
           </Switch>
           <Footer />

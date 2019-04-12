@@ -9,7 +9,7 @@ export default class MyApp extends React.Component {
       console.log("The payment was succeeded!", payment);
 
       this.props.clearCart();
-      this.props.history.push("/shop");
+      this.props.history.push("/");
     };
 
     const onCancel = data => {

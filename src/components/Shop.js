@@ -7,23 +7,40 @@ class Shop extends Component {
   constructor() {
     super();
     this.state = {
-      sort: "",
+      searchTerm: "",
       items: [],
-      filteredProducts: []
+      filteredItems: []
     };
   }
-  listProducts = () => {
-    this.setState(state => {
-      if (state.sort !== "") {
-        state.items.sort((a, b) => (a.category > b.category ? 1 : -1));
-      }
-      return { filteredProducts: state.items };
+  componentDidMount() {
+    fetch("http://localhost:3000/items")
+      .then(res => res.json())
+      // .then(console.log);
+      .then(items => this.setState({ items: items, filteredItems: items }));
+  }
+  changeHandler = e => {
+    let items = [...this.state.items].filter(item =>
+      item.category.toLowerCase().includes("top"())
+    );
+    this.setState({
+      filterItems: items,
+      searchTerm: e.target.value
     });
   };
-  handleSortChange = e => {
-    this.setState({ sort: e.target.value });
-    this.listProducts();
-  };
+  // let bikiniList = data.filter(bikini => bikini.name.includes("top"));
+  // }
+  // listProducts = () => {
+  //   this.setState(state => {
+  //     if (state.sort !== "") {
+  //       state.items.sort((a, b) => (a.category > b.category ? 1 : -1));
+  //     }
+  //     return { filteredProducts: state.items };
+  //   });
+  // };
+  // handleSortChange = e => {
+  //   this.setState({ sort: e.target.value });
+  //   this.listProducts();
+  // };
   handleClick = id => {
     this.props.addToCart(id);
   };
@@ -77,8 +94,8 @@ class Shop extends Component {
     return (
       <div className="container">
         <Filter
-          count={this.state.filteredProducts.length}
-          handleSortChange={this.handleSortChange}
+          value={this.state.searchTerm}
+          changeHandler={this.changeHandler}
         />
         <h3 className="center">swimwear</h3>
         <div className="box">{itemList}</div>

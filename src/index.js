@@ -6,6 +6,7 @@ import "./index.css";
 import cartReducer from "./components/reducers/cartReducer";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
+import axios from "axios";
 
 const store = createStore(cartReducer);
 console.log(store.getState());

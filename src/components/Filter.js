@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-// import { connect } from "react-redux";
+import { connect } from "react-redux";
+import ItemsData from "./ItemsData";
 
 export default class Filter extends Component {
   render() {
@@ -7,16 +8,19 @@ export default class Filter extends Component {
     //   const { storeProducts, category } = this.state;
     //   let tempProducts = [...storeProducts];
     //
-    //   // filter by categeory
-    //   if (category !== "top") {
-    //     tempProducts = tempProducts.sort(item => item.category === category);
+    // filter by categeory
+    // changeHandler = e => {
+    //   if (this.props.value.category !== "top") {
+    //     let categories = categories.sort(item => item.value === category);
     //   }
     // };
 
     console.log(this.props);
     return (
       <div className="row">
-        <div className="col-md-4">{`${this.props.count} bikinis found.`}</div>
+        <div className="col-md-4">{`${
+          this.props.value.length
+        } bikinis found.`}</div>
         <div className="col-md-4">
           <label>
             Order by

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import CheckoutForm from "./CheckoutForm";
 import {
   removeItem,
   addQuantity,
@@ -22,8 +21,8 @@ class Cart extends Component {
   handleSubtractQuantity = id => {
     this.props.subtractQuantity(id);
   };
-  handleClearCart = item => {
-    this.props.clearCart(item);
+  handleClearCart = () => {
+    this.props.clearCart();
   };
   render() {
     let addedItems = this.props.items.length ? (
@@ -108,8 +107,8 @@ const mapDispatchToProps = dispatch => {
     subtractQuantity: id => {
       dispatch(subtractQuantity(id));
     },
-    clearCart: id => {
-      dispatch(clearCart(id));
+    clearCart: () => {
+      dispatch(clearCart());
     }
   };
 };

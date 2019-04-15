@@ -6,7 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const LandingPage = () => {
   return (
-    <div className="container">
+    <div className="home-container">
       <header id="showcase">
         <p>Say aloha to our new bikini collection. </p>
         <h1>

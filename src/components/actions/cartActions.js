@@ -6,6 +6,7 @@ import {
   ADD_SHIPPING,
   CLEAR_CART
 } from "./action-types/cart-actions";
+import { Link } from "react-router-dom";
 
 //add cart action
 export const addToCart = id => {

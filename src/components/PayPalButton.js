@@ -1,24 +1,30 @@
 import React from "react";
 import PaypalBtn from "react-paypal-checkout";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { clearCart } from "./actions/cartActions";
+// import CartTotals from "./CartTotals";
 
-export default class MyApp extends React.Component {
+class MyApp extends React.Component {
   render() {
     const onSuccess = payment => {
       // Congratulation, it came here means everything's fine!
-      console.log("The payment was succeeded!", payment);
+      alert(
+        "The payment was successful! Thanks for shopping at aloha babe!",
+        payment
+      );
       this.props.clearCart();
-      this.props.history.push("/");
+      this.props.push("/");
     };
 
     const onCancel = data => {
       // User pressed "cancel" or close Paypal's popup!
-      console.log("The payment was cancelled!", data);
+      alert("The payment was cancelled!", data);
     };
 
     const onError = err => {
       // The main Paypal's script cannot be loaded or somethings block the loading of that script!
-      console.log("Error!", err);
+      alert("Error!", err);
     };
 
     let env = "sandbox"; // you can set here to 'production' for production
@@ -61,3 +67,22 @@ export default class MyApp extends React.Component {
     );
   }
 }
+
+const mapStateToProps = state => {
+  return {
+    items: state.addedItems
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    clearCart: () => {
+      dispatch(clearCart());
+    }
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(MyApp);

@@ -7,13 +7,15 @@ body {
   font-family: "Karla", sans-serif !important;
   font-size: 17px;
   line-height: 1.6;
+
+  /* "https://cdn.shopify.com/s/files/1/0426/9481/files/Ashley-Moore-3_ac4540b1-dc1e-4105-81e2-e07f43365d65_1024x1024.jpg?v=1496697427" */
 }
 
 #showcase {
   background-image: url("https://cdn.shopify.com/s/files/1/0426/9481/files/Ashley-Moore-3_ac4540b1-dc1e-4105-81e2-e07f43365d65_1024x1024.jpg?v=1496697427") !important;
   background-size: cover !important;
   background-position: center !important;
-  height: 95vh;
+  height: 110vh;
   width: auto;
   display: flex;
   flex-direction: column;
@@ -34,27 +36,28 @@ body {
 }
 
 #showcase .button {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  visibility: visible;
   font-size: 30px;
   text-decoration: none;
-  color: white;
+  color: black;
   border: white 2px solid;
   padding: 10px 20px;
   border-radius: 10px;
   margin-top: 20px;
 }
-
 #showcase .button:hover {
-  background: black;
+  background: white;
   /* color: #fff; */
 }
-
 #section-a {
   padding: 15px;
   background: black;
   /* color: #fff; */
   text-align: left;
 }
-
 #section-b {
   padding: 20px;
   background: #f4f4f4;
@@ -86,20 +89,17 @@ footer {
   height: 38rem;
   display: inline-flex;
 }
-
 .slider-container {
   top: 0px;
   left: 0px;
   position: relative;
   image-orientation: center;
 }
-
 .slide img {
   height: 700px !important;
   width: auto !important;
   align-items: center;
 }
-
 .slider-item-div {
   padding: 10px;
   background-color: white;

@@ -1,13 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { addToCart } from "./actions/cartActions";
-// import Filter from "./Filter";
-// import Sort from "./Sort";
+import Filter from "./Filter";
 
-// <Sort
-//   value={this.state.itemsToFilter}
-//   changeHandler={this.changeHandler}
-// />
 class Shop extends Component {
   constructor() {
     super();
@@ -105,6 +100,10 @@ class Shop extends Component {
     console.log(this.state);
     return (
       <div className="container">
+        <Filter
+          value={this.state.filteredItems}
+          changeHandler={this.changeHandler}
+        />
         <h3 className="center">swimwear</h3>
         <div className="box">{itemList}</div>
       </div>

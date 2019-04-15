@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import CheckoutForm from "./CheckoutForm";
 import {
   removeItem,
   addQuantity,
@@ -94,7 +95,6 @@ class Cart extends Component {
 const mapStateToProps = state => {
   return {
     items: state.addedItems
-    // addedItems: state.addedItems
   };
 };
 const mapDispatchToProps = dispatch => {

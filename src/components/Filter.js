@@ -1,20 +1,18 @@
 import React, { Component } from "react";
-import { addToCart } from "./actions/cartActions";
-import { connect } from "react-redux";
-import cartReducer from "./reducers/cartReducer";
-import Shop from "./Shop";
+// import { connect } from "react-redux";
 
 export default class Filter extends Component {
-  // sortData = () => {
-  //   const { storeProducts, category } = this.state;
-  //   let tempProducts = [...storeProducts];
-  //
-  //   // filter by categeory
-  //   if (category !== "top") {
-  //     tempProducts = tempProducts.sort(item => item.category === category);
-  //   }
-  // };
   render() {
+    // sortData = () => {
+    //   const { storeProducts, category } = this.state;
+    //   let tempProducts = [...storeProducts];
+    //
+    //   // filter by categeory
+    //   if (category !== "top") {
+    //     tempProducts = tempProducts.sort(item => item.category === category);
+    //   }
+    // };
+
     console.log(this.props);
     return (
       <div className="row">
@@ -25,7 +23,7 @@ export default class Filter extends Component {
             <select
               className="form-control"
               value={this.props.sort}
-              changeHandler={this.props.handleSortChange}
+              changeHandler={this.props.changeHandler}
             >
               <option value="">Select</option>
               <option value="category.top">Tops</option>

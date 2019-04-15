@@ -1,8 +1,13 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { addToCart } from "./actions/cartActions";
-import Filter from "./Filter";
+// import Filter from "./Filter";
+// import Sort from "./Sort";
 
+// <Sort
+//   value={this.state.itemsToFilter}
+//   changeHandler={this.changeHandler}
+// />
 class Shop extends Component {
   constructor() {
     super();
@@ -20,13 +25,20 @@ class Shop extends Component {
   }
   changeHandler = e => {
     let items = [...this.state.items].filter(item =>
-      item.category.toLowerCase().includes("top"())
+      item.category.toLowerCase().includes(item.category())
     );
     this.setState({
       filterItems: items,
       searchTerm: e.target.value
     });
   };
+
+  applyFilter(category) {
+    this.setState({
+      ...this.state,
+      itemsToFilter: category
+    });
+  }
   // let bikiniList = data.filter(bikini => bikini.name.includes("top"));
   // }
   // listProducts = () => {
@@ -90,13 +102,9 @@ class Shop extends Component {
         </div>
       );
     });
-
+    console.log(this.state);
     return (
       <div className="container">
-        <Filter
-          value={this.state.searchTerm}
-          changeHandler={this.changeHandler}
-        />
         <h3 className="center">swimwear</h3>
         <div className="box">{itemList}</div>
       </div>

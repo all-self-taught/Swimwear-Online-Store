@@ -5,9 +5,13 @@ import LandingPage from "./components/LandingPage";
 import Navbar from "./components/Navbar";
 import Shop from "./components/Shop";
 import Cart from "./components/Cart";
-import Css from "./App.css";
+import Contact from "./FooterLinks/Contact";
+import Story from "./FooterLinks/Story";
+import Press from "./FooterLinks/Press";
+
+// import Css from "./App.css";
 import Footer from "./components/Footer";
-import Filter from "./components/Filter";
+// import Filter from "./components/Filter";
 // import Signup from "./components/Signup";
 
 class App extends Component {
@@ -25,32 +29,19 @@ class App extends Component {
       // .then(console.log);
       .then(items => this.setState({ items: items, filteredItems: items }));
   }
-  changeHandler = e => {
-    let items = [...this.state.items].filter(item =>
-      item.category.toLowerCase().includes("top"())
-    );
-    this.setState({
-      filterItems: items,
-      searchTerm: e.target.value
-    });
-  };
 
-  applyFilter(category) {
-    this.setState({
-      ...this.state,
-      itemsToFilter: category
-    });
-  }
   render() {
     return (
       <BrowserRouter>
         <div className="App">
           <Navbar />
-
           <Switch>
             <Route exact path="/" component={LandingPage} />
             <Route path="/shop" component={Shop} />
             <Route path="/cart" component={Cart} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/story" component={Story} />
+            <Route path="/press" component={Press} />
           </Switch>
           <Footer />
         </div>

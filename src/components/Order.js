@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import PayPalButton from "./PayPalButton";
-import Cart from "./Cart";
+// import Cart from "./Cart";
 
 class Order extends Component {
   componentWillUnmount() {
@@ -27,11 +27,11 @@ class Order extends Component {
                 ref="shipping"
                 onChange={this.handleChecked}
               />
-              <span>Shipping(+6$)</span>
+              <span>Shipping(+$6)</span>
             </label>
           </li>
           <li className="collection-item">
-            <b>Total: {this.props.total} $</b>
+            <b>Total: ${this.props.total}</b>
           </li>
         </div>
         <PayPalButton

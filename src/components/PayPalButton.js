@@ -1,6 +1,6 @@
 import React from "react";
 import PaypalBtn from "react-paypal-checkout";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { clearCart } from "./actions/cartActions";
 // import CartTotals from "./CartTotals";

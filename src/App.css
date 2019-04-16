@@ -6,3 +6,8 @@ body {
   /* font-family: "Handlee", cursive !important; */
   /* font-family: "Yanone Kaffeesatz", sans-serif !important; */
 }
+#mySlider {
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+}

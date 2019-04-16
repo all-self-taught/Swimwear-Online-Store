@@ -1,29 +1,57 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { addToCart } from "./actions/cartActions";
+import Filter from "./Filter";
 
 class Shop extends Component {
+  constructor() {
+    super();
+    this.state = {
+      searchTerm: "",
+      items: [],
+      filteredItems: []
+    };
+  }
+  componentDidMount() {
+    fetch("http://localhost:3000/items")
+      .then(res => res.json())
+      // .then(console.log);
+      .then(items => this.setState({ items: items, filteredItems: items }));
+  }
+
+  changeHandler = e => {
+    let newArray = [...this.state.items];
+    let items = newArray.filter(item =>
+      item.title.value.toLowerCase().includes(e.target.value.toLowerCase())
+    );
+
+    this.setState({
+      filteredItems: items,
+      searchTerm: e.target.value
+    });
+  };
+
+  // let listProducts = () => {
+  //   this.setState(state => {
+  //     if (state.sort !== "") {
+  //     item.filter(item => item.title.includes("top"));
+  //     }
+  //     return { filteredItems: state.items }
+  // }
+  // )};
+  //
+  // handleSortChange = e => {
+  //   this.setState({ sort: e.target.value });
+  //   this.listProducts();
+  // };
   handleClick = id => {
     this.props.addToCart(id);
   };
 
-  findTop = () => {
-    let foundTops = [...this.props.items].filter(item =>
-      item.category.includes("top")
-    );
-    console.log("foundTops", foundTops);
-  };
-  findBottom = () => {
-    let foundBottoms = [...this.props.items].filter(item =>
-      item.category.includes("bottom")
-    );
-    console.log("foundBottoms", foundBottoms);
-  };
-
   render() {
-    console.log("props.items: ", this.props.items);
-
-    let itemList = this.props.filterArray.map(item => {
+    console.log("state: ", this.state);
+    console.log("props: ", this.props);
+    let itemList = this.props.items.map(item => {
       return (
         <div class="row">
           <div class="col s12 m6">
@@ -67,27 +95,13 @@ class Shop extends Component {
         </div>
       );
     });
-
+    // console.log(this.state);
     return (
       <div className="container">
-        <h4>{this.props.items.length} swimwear found</h4>
-        <button
-          className="waves-effect white waves-light btn"
-          onClick={() => {
-            this.findTop();
-          }}
-        >
-          Tops
-        </button>
-        <button
-          className="waves-effect white waves-light btn"
-          onClick={() => {
-            this.findBottom();
-          }}
-        >
-          Bottoms
-        </button>
-
+        <Filter
+          value={this.state.filteredItems}
+          changeHandler={this.changeHandler}
+        />
         <h3 className="center">swimwear</h3>
         <div className="box">{itemList}</div>
       </div>
@@ -96,8 +110,7 @@ class Shop extends Component {
 }
 const mapStateToProps = state => {
   return {
-    items: state.items,
-    filterArray: state.filterArray
+    items: state.items
   };
 };
 const mapDispatchToProps = dispatch => {

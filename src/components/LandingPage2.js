@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./styles.css";
-import Gallery from "./Gallery";
+import Carousel from "./Carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const LandingPage = () => {
   return (
     <div className="home-container">
       <header id="showcase">
-        <p>Say aloha to our new bikini collection </p>
+        <p>Say aloha to our new bikini collection. </p>
         <h1>
           <Link to="/shop">
             <a href="#" class="button">
@@ -19,7 +19,7 @@ const LandingPage = () => {
       </header>
       <section id="section-a">
         <div>
-          <Gallery />
+          <Carousel />
         </div>
       </section>
       <section id="section-b">

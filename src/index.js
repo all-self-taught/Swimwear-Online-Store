@@ -6,10 +6,10 @@ import "./index.css";
 import cartReducer from "./components/reducers/cartReducer";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
-import axios from "axios";
+// import axios from "axios";
 
 const store = createStore(cartReducer);
-console.log(store.getState());
+// console.log(store.getState());
 
 const action = {
   type: "changeState",

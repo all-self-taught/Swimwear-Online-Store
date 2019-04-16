@@ -7,15 +7,12 @@ body {
   font-family: "Karla", sans-serif !important;
   font-size: 17px;
   line-height: 1.6;
-
-  /* "https://cdn.shopify.com/s/files/1/0426/9481/files/Ashley-Moore-3_ac4540b1-dc1e-4105-81e2-e07f43365d65_1024x1024.jpg?v=1496697427" */
 }
-
-#showcase {
-  background-image: url("https://cdn.shopify.com/s/files/1/0426/9481/files/Ashley-Moore-3_ac4540b1-dc1e-4105-81e2-e07f43365d65_1024x1024.jpg?v=1496697427") !important;
+#press {
+  background-image: url("https://cdn.shopify.com/s/files/1/0158/2548/products/Frankies-Bikinis-Lookbook-4-Neon_2048x.jpg?v=1543514901") !important;
   background-size: cover !important;
   background-position: center !important;
-  height: 110vh;
+  height: 140vh;
   width: auto;
   display: flex;
   flex-direction: column;
@@ -25,9 +22,60 @@ body {
   padding: 0 20px;
 }
 
-#showcase h1 {
-  font-size: 30px;
-  line-height: 1.2;
+#contact {
+  background-image: url("https://cdn.shopify.com/s/files/1/0426/9481/files/Ashley-Moore-3_ac4540b1-dc1e-4105-81e2-e07f43365d65_1024x1024.jpg?v=1496697427") !important;
+  /* */
+  /* url("https://cdn.shopify.com/s/files/1/0158/2548/products/Frankies-Bikinis-USA-12_2048x.jpg?v=1525890827");  closup*/
+  /* url("https://cdn.shopify.com/s/files/1/0158/2548/products/Frankies-Bikinis-USA-5_2048x.jpg?v=1525890710"); closeup*/
+
+  background-size: cover !important;
+  background-position: center !important;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+#story {
+  background-image: url("https://cdn.shopify.com/s/files/1/0158/2548/products/Festival-4_2048x.jpg?v=1476475540") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  height: 130vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+#showcase {
+  background-image: url("https://cdn.shopify.com/s/files/1/0158/2548/products/Frankies-Bikinis-USA-10_2048x.jpg?v=1525890623") !important;
+  /* https://i.pinimg.com/564x/dd/7e/5b/dd7e5bd847dda2f5915b33c8bef292a9.jpg */
+  /* url("https://cdn.shopify.com/s/files/1/0426/9481/files/Ashley-Moore-3_ac4540b1-dc1e-4105-81e2-e07f43365d65_1024x1024.jpg?v=1496697427") !important; yellow umbrella */
+  /* url("https://cdn.shopify.com/s/files/1/0158/2548/products/Frankies-Bikinis-USA-12_2048x.jpg?v=1525890827");  closup*/
+  /* url("https://cdn.shopify.com/s/files/1/0158/2548/products/Frankies-Bikinis-USA-5_2048x.jpg?v=1525890710"); closeup*/
+  /* url("https://cdn.shopify.com/s/files/1/0158/2548/products/Frankies-Bikinis-USA-10_2048x.jpg?v=1525890623") 2 girls red bikinis; */
+
+  background-size: cover !important;
+  background-position: center !important;
+  height: 130vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+.materialboxed img {
+  height: 50vh !important;
+  width: auto !important;
+  align-items: center;
 }
 
 #showcase p {
@@ -50,12 +98,12 @@ body {
 }
 #showcase .button:hover {
   background: white;
-  /* color: #fff; */
+  color: #fff;
 }
 #section-a {
   padding: 15px;
-  background: black;
-  /* color: #fff; */
+  background: white;
+  color: #fff;
   text-align: left;
 }
 #section-b {
@@ -82,8 +130,9 @@ footer {
   display: block;
   width: 100%;
   height: 50px;
-  background-color: black;
+  background-color: white;
   color: white;
+  bottom: 0;
 }
 .card {
   height: 38rem;
@@ -95,11 +144,7 @@ footer {
   position: relative;
   image-orientation: center;
 }
-.slide img {
-  height: 700px !important;
-  width: auto !important;
-  align-items: center;
-}
+
 .slider-item-div {
   padding: 10px;
   background-color: white;
@@ -110,4 +155,28 @@ footer {
 .carousel-style {
   height: 100% !important;
   width: 100% !important;
+}
+
+.testing {
+  background-color: grey;
+  padding: 20px;
+  margin: 20px;
+}
+.slider .btn {
+  margin-top: 20px;
+}
+
+.section-search input {
+  padding: 5px !important;
+  font-size: 18px !important;
+  width: 90% !important;
+  border: #f4f4f4 3px solid !important;
+}
+
+.section-follow .fa-4x {
+  margin: 5px 10px;
+}
+
+.section-contact h5 {
+  margin-bottom: 30px;
 }

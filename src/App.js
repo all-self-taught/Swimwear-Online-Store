@@ -8,6 +8,7 @@ import Cart from "./components/Cart";
 import Contact from "./FooterLinks/Contact";
 import Story from "./FooterLinks/Story";
 import Press from "./FooterLinks/Press";
+import Testimonial from "./components/Testimonial";
 
 // import Css from "./App.css";
 import Footer from "./components/Footer";
@@ -42,6 +43,7 @@ class App extends Component {
             <Route path="/contact" component={Contact} />
             <Route path="/story" component={Story} />
             <Route path="/press" component={Press} />
+            <Route path="/testimonial" component={Testimonial} />
           </Switch>
           <Footer />
         </div>

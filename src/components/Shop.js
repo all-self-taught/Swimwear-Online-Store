@@ -54,10 +54,22 @@ class Shop extends Component {
                 </span>
                 <p>
                   <div className="card-content">
-                    <p>{item.desc}</p>
-                    <p>Size: {item.size}</p>
                     <p>
-                      <b>${item.price}</b>{" "}
+                      <b>description</b>
+                      <br />
+                      {item.desc}
+                    </p>
+                    <br />
+                    <p>
+                      <b>available sizes</b> <br />
+                      {item.size}
+                    </p>
+                    <br />
+                    <p>
+                      <b>
+                        ${item.price}
+                        <b />
+                      </b>
                     </p>
                   </div>
                 </p>

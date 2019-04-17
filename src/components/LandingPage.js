@@ -9,13 +9,9 @@ const LandingPage = () => {
     <div className="home-container">
       <header id="showcase">
         <p>Say aloha to our new bikini collection </p>
-        <h1>
-          <Link to="/shop">
-            <a href="#" class="button">
-              SHOP THE COLLECTION
-            </a>
-          </Link>
-        </h1>
+        <a href="/shop" class="button">
+          SHOP THE COLLECTION
+        </a>
       </header>
       <section id="section-a">
         <div>

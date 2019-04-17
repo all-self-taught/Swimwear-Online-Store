@@ -9,26 +9,25 @@ const Navbar = () => {
             <div class="brand-logo">
               <i class="small material-icons">filter_vintage</i>aloha babe
             </div>
-
             <ul class="right hide-on-med-and-down">
               <li>
-                <Link to="/Shop">Shop Swim</Link>
+                <a href="/shop">Shop Swim</a>
               </li>
               <li>
-                <Link to="/">
+                <a href="/">
                   <i className="material-icons">home</i>
-                </Link>
+                </a>
               </li>
 
               <li>
-                <Link to="/">
+                <a href="/testimonial">
                   <i className="material-icons">favorite</i>
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/cart">
+                <a href="/cart">
                   <i className="material-icons">shopping_basket</i>
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

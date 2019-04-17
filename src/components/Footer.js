@@ -12,21 +12,16 @@ const Footer = () => {
           <h5 class="white-text left">company</h5>
           <br />
           <br />
-
-          <ul>
-            <li>
-              <Link to="/story">Our Story</Link>
-              <a class="grey-text" href="#!" />
-            </li>
-            <li>
-              <Link to="/contact">Contact Us</Link>
-              <a class="grey-text" href="#!" />
-            </li>
-            <li>
-              <Link to="/press">Press</Link>
-              <a class="grey-text" href="#!" />
-            </li>
-          </ul>
+          <div class="links">
+            <Link to="/story">Our Story</Link>
+            <a class="grey-text" href="#!" />
+            <br />
+            <Link to="/contact">Contact Us</Link>
+            <a class="grey-text" href="#!" />
+            <br />
+            <Link to="/press">Press</Link>
+            <a class="grey-text" href="#!" />
+          </div>
         </div>
       </div>
       <section class="section section-follow black white-text center">

@@ -4,8 +4,8 @@ const Gallery = () => {
   return (
     <section id="gallery" class="section section-gallery scrollspy">
       <div class="container">
-        <h2 class="center">
-          <span class="black-text">
+        <h1 class="center">
+          <span class="insta black-text">
             <a href="https://www.instagram.com/alohababe.co/?hl=en">
               <img
                 src="https://image.flaticon.com/icons/svg/1384/1384015.svg"
@@ -15,7 +15,7 @@ const Gallery = () => {
             </a>
             <b> Insta Gallery </b>
           </span>
-        </h2>
+        </h1>
         <h5 class="black-text center">
           Tag #alohababe on Instagram for a chance to be featured in our gallery
           @alohababes.co

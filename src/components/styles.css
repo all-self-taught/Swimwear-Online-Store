@@ -4,10 +4,24 @@
 }
 body {
   margin: 0;
+  /* font-family: "Quicksand", sans-serif !important; */
   font-family: "Karla", sans-serif !important;
+  /* font-family: "Abel", sans-serif !important; */
+
   font-size: 17px;
   line-height: 1.6;
 }
+.insta {
+  /* font-family: "Londrina Sketch", cursive !important; */
+  font-family: "Londrina Shadow", cursive !important;
+}
+.brand-logo {
+  font-family: "Londrina Shadow", cursive !important;
+  /* font-family: "Boomville", cursive !important; */
+  color: white !important;
+  font-size: 50px !important;
+}
+
 #press {
   background-image: url("https://cdn.shopify.com/s/files/1/0158/2548/products/Frankies-Bikinis-Lookbook-4-Neon_2048x.jpg?v=1543514901") !important;
   background-size: cover !important;
@@ -24,10 +38,6 @@ body {
 
 #contact {
   background-image: url("https://ae01.alicdn.com/kf/HTB1QMw6n0fJ8KJjy0Feq6xKEXXa7/Hawaii-Seaside-Sunshine-Scenery-Blue-Water-Sky-Photography-Backdrops-Wood-Decoration-Photo-Studio-Background-Props.jpg_640x640.jpg") !important;
-  /* */
-  /* url("https://cdn.shopify.com/s/files/1/0158/2548/products/Frankies-Bikinis-USA-12_2048x.jpg?v=1525890827");  closup*/
-  /* url("https://cdn.shopify.com/s/files/1/0158/2548/products/Frankies-Bikinis-USA-5_2048x.jpg?v=1525890710"); closeup*/
-
   background-size: cover !important;
   background-position: center !important;
   height: 100vh;
@@ -75,26 +85,36 @@ body {
 
 #showcase p {
   font-size: 30px;
-  line-height: 3.2;
+  line-height: 1.6;
+}
+/* .container {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  padding-left: 25px;
+  padding-right: 25px;
+} */
+#showcase .button {
+  /* font-family: "Quicksand", sans-serif !important; */
+  font-family: "Abel", sans-serif !important;
+  /* font-family: "Londrina Shadow", cursive !important; */
+  background-color: white !important;
+  border-color: white !important;
+  color: black !important;
+  visibility: visible;
+  font-size: 40px !important;
+  text-decoration: none;
+  color: black !important ;
+  border: white 3px solid !important;
+  padding: 10px 20px !important;
+  border-radius: 10px !important;
+  margin-top: 8px !important;
+}
+#showcase .button a:hover {
+  text-decoration: none !important;
+  background-color: black !important;
+  color: white !important;
 }
 
-#showcase .button {
-  background-color: rgb(255, 255, 255);
-  border-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  visibility: visible;
-  font-size: 30px;
-  text-decoration: none;
-  color: black;
-  border: white 2px solid;
-  padding: 10px 20px;
-  border-radius: 10px;
-  margin-top: 20px;
-}
-#showcase .button:hover {
-  background: pink;
-  color: #fff;
-}
 #section-a {
   padding: 15px;
   background: white;
@@ -126,6 +146,7 @@ header {
 .navButton {
   float: right;
 }
+
 footer {
   display: block;
   width: 100%;
@@ -138,45 +159,18 @@ footer {
   height: 38rem;
   display: inline-flex;
 }
-.slider-container {
-  top: 0px;
-  left: 0px;
-  position: relative;
-  image-orientation: center;
-}
-
-.slider-item-div {
-  padding: 10px;
-  background-color: white;
-  text-align: center;
-  height: 600px !important;
-  width: auto !important;
-}
-.carousel-style {
-  height: 100% !important;
-  width: 100% !important;
-}
-
-.testing {
-  background-color: grey;
-  padding: 20px;
-  margin: 20px;
-}
-.slider .btn {
-  margin-top: 20px;
-}
-
-.section-search input {
-  padding: 5px !important;
-  font-size: 18px !important;
-  width: 90% !important;
-  border: #f4f4f4 3px solid !important;
-}
 
 .section-follow .fa-4x {
   margin: 5px 10px;
 }
 
-.section-contact h5 {
-  margin-bottom: 30px;
+.links a:hover {
+  text-decoration: none !important;
+  background-color: white !important;
+  color: black !important;
+}
+.hide-on-med-and-down li a:hover {
+  text-decoration: none !important;
+  background-color: #282828 !important;
+  color: white !important;
 }

@@ -1,10 +1,20 @@
 body {
-  font-family: "Karla", sans-serif !important;
+  /* font-family: "Karla", sans-serif !important; */
 
   /* font-family: "Fjalla One", sans-serif !important; */
   /* font-family: "Abel", sans-serif !important; */
   /* font-family: "Handlee", cursive !important; */
   /* font-family: "Yanone Kaffeesatz", sans-serif !important; */
+  /* font-family: "Over the Rainbow", cursive !important; */
+  /* font-family: "The Girl Next Door", cursive !important; */
+  /* font-family: "Calligraffitti", cursive !important; */
+
+  /* font-family: "Sacramento", cursive !important;
+  /* font-family: "Pacifico", cursive !important; */
+  /* font-family: "Neucha", cursive !important; */
+  /* font-family: "Leckerli One", cursive !important;
+  font-family: "Give You Glory", cursive !important;
+  font-family: "Vibur", cursive !important; */
 }
 #mySlider {
   width: 50vw;

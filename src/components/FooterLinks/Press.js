@@ -16,9 +16,6 @@ const Press = () => {
             </a>
           </Link>
         </h4>
-        <p>
-          <h4 class="white-text center">Press</h4>
-        </p>
       </section>
     </div>
   );

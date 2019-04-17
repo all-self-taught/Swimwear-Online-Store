@@ -12,7 +12,7 @@ const Collection = () => {
           </h2>
         </div>
         <div class="row">
-          <div class="col s12 m7">
+          <div class="col s12 m7 center">
             <div class="card">
               <div class="card-image">
                 <img
@@ -22,19 +22,19 @@ const Collection = () => {
                   alt=""
                 />
                 <span class="card-title" />
-                <a class="btn-floating halfway-fab waves-effect waves-ligh black">
+                <a class="btn-floating halfway-fab waves-effect waves-light black">
                   <i class="material-icons">favorite</i>
                 </a>
               </div>
               <div class="card-content">
                 <p>
                   Whether it’s with a trendy top or a cheeky bottom, we’re all
-                  about keeping you naturally cute and effortlessly chic.
+                  about keeping you naturally cute and effortlessly chic
                 </p>
               </div>
             </div>
           </div>
-          <div class="col s12 m7">
+          <div class="col s12 m7 center">
             <div class="card">
               <div class="card-image">
                 <img
@@ -49,12 +49,12 @@ const Collection = () => {
               <div class="card-content">
                 <p>
                   We think you’re dope just the way you are, but we’re here to
-                  give you that little bit of extra.{" "}
+                  give you that little bit of extra
                 </p>
               </div>
             </div>
           </div>
-          <div class="col s12 m7">
+          <div class="col s12 m7 center">
             <div class="card">
               <div class="card-image">
                 <img
@@ -69,7 +69,7 @@ const Collection = () => {
               <div class="card-content">
                 <p>
                   Shop our luxe swimwear collection and find this year’s perfect
-                  suit for the beach and beyond.
+                  suit for the beach and beyond
                 </p>
               </div>
             </div>

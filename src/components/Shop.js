@@ -82,7 +82,7 @@ class Shop extends Component {
 
     return (
       <div className="container">
-        <h4>{this.props.items.length} swimwear found</h4>
+        <h4 class="number">{this.props.items.length} bikinis found</h4>
         <button
           className="waves-effect white waves-light btn"
           onClick={() => {

@@ -35,9 +35,6 @@ const Footer = () => {
       </section>
       <div class="container">
         <div class="grid grid--no-gutters flex small--flex-column site-footer__flex">
-          <h5 class="black-text left">company</h5>
-          <br />
-          <br />
           <div class="links">
             <Link to="/story">Our Story</Link>
             <a class="grey-text" href="#!" />

@@ -16,9 +16,6 @@ const Story = () => {
             </a>
           </Link>
         </h4>
-        <p>
-          <h4 class="white-text center">our story</h4>
-        </p>
       </section>
     </div>
   );

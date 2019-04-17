@@ -7,7 +7,7 @@ const Testimonial = () => {
       <div class="container">
         <div class="row">
           <h4 class="center">
-            <span class="pink-text">Bikinis We Love</span>
+            <span class="pink-text">Trends We Love</span>
           </h4>
           <div class="col s12 m4">
             <div class="card">

@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./styles.css";
 import Gallery from "./Gallery";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Collection from "./Collection";
+import ReactPlayer from "react-player";
 
 const LandingPage = () => {
   return (
@@ -13,6 +14,19 @@ const LandingPage = () => {
           SHOP THE COLLECTION
         </a>
       </header>
+      <div>
+        <Collection />
+      </div>
+
+      <div class="hero--video-block video-wrapper small--hide">
+        <iframe
+          src="https://player.vimeo.com/video/331042234?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=1"
+          width="1920"
+          height="1080"
+          frameborder="0"
+        />
+      </div>
+
       <section id="section-a">
         <div>
           <Gallery />

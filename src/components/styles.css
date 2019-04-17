@@ -23,7 +23,7 @@ body {
 }
 
 #contact {
-  background-image: url("https://cdn.shopify.com/s/files/1/0426/9481/files/Ashley-Moore-3_ac4540b1-dc1e-4105-81e2-e07f43365d65_1024x1024.jpg?v=1496697427") !important;
+  background-image: url("https://ae01.alicdn.com/kf/HTB1QMw6n0fJ8KJjy0Feq6xKEXXa7/Hawaii-Seaside-Sunshine-Scenery-Blue-Water-Sky-Photography-Backdrops-Wood-Decoration-Photo-Studio-Background-Props.jpg_640x640.jpg") !important;
   /* */
   /* url("https://cdn.shopify.com/s/files/1/0158/2548/products/Frankies-Bikinis-USA-12_2048x.jpg?v=1525890827");  closup*/
   /* url("https://cdn.shopify.com/s/files/1/0158/2548/products/Frankies-Bikinis-USA-5_2048x.jpg?v=1525890710"); closeup*/
@@ -72,11 +72,6 @@ body {
   text-align: center;
   padding: 0 20px;
 }
-.materialboxed img {
-  height: 50vh !important;
-  width: auto !important;
-  align-items: center;
-}
 
 #showcase p {
   font-size: 30px;
@@ -97,7 +92,7 @@ body {
   margin-top: 20px;
 }
 #showcase .button:hover {
-  background: white;
+  background: pink;
   color: #fff;
 }
 #section-a {
@@ -110,6 +105,11 @@ body {
   padding: 20px;
   background: #f4f4f4;
   text-align: center;
+}
+.materialboxed img {
+  height: 50vh !important;
+  width: auto !important;
+  align-items: center;
 }
 header {
   display: block;

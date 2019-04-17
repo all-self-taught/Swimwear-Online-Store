@@ -77,7 +77,10 @@ class Cart extends Component {
         );
       })
     ) : (
-      <p>Your bag is currently empty.</p>
+      <p>
+        Your bag is currently empty...
+        <i class="small material-icons">sentiment_very_dissatisfied</i>
+      </p>
     );
     return (
       <div className="container">

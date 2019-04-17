@@ -1,94 +1,69 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import iframe from "react-iframe";
-
-//  <div className="container">
-// <header id="contact">
-//   <h1>Help, please. </h1>
-// </header>;
-//       <section id="section-a">
-//         <h5>
-//           <Link to="/shop">
-//             <a href="#" class="button">
-//               Back to Shopping
-//             </a>
-//           </Link>{" "}
-//           c
-//         </h5>
-//
-//         <p>
-//           <h4 class="white-text center">
-//             chat with us: If you have a sizing question or need immediate
-//             assistance, please click the chat bubble in the lower left hand
-//             corner to chat live with a customer service representative. Live
-//             Chat is available M-F 8:00 AM - 5:00 PM PST email us:
-//             Support@FrankiesBikinis.com call us: (888) 959-0519 wholesale
-//             inquiries: Sales@FrankiesBikinis.com
-//           </h4>
-//         </p>
-//       </section>
-//     </div>
-//   );
-// };
-
+// <h4>
+//   <center>
+//     At aloha babe, we are happy to assist you with all of your shopping
+//     needs.
+//   </center>
+// </h4>
+// <br />
 const Contact = () => {
   return (
-    <div className="container">
-      <h1>
-        <center>Help, please. </center>
-      </h1>
-      <section id="contact" class="section section-contact scrollspy">
-        <div class="container">
-          <div class="row">
-            <div class="col s12 m6">
-              <div class="card-panel white black-text center">
-                <i class="material-icons medium">email</i>
-                <h5>Contact Us</h5>
-                <p>
-                  chat with us: If you have a sizing question or need immediate
-                  assistance, please:
-                  <ul>
-                    <li>email us: Support@alohababe.com </li>
-                    <li>call us: (222) 959-0519 </li>
-                    <li>wholesale inquiries: Sales@alohababe.com</li>
-                  </ul>
-                </p>
-              </div>
-
-              <h4>Location</h4>
+    <header id="contact" class="section-contact">
+      <div class="container">
+        <h1>
+          <center>Contact Us</center>
+        </h1>
+      </div>
+      <div class="card-panel white black-text">
+        <i class="material-icons small"> call</i>
+        <h4>Call Us</h4>
+        <p>(808)-224-2240 Monday-Friday from 8am-4pm Standard Hawaii time</p>
+        <br />
+        <i class="material-icons small"> email</i>
+        <h4>Email Us</h4>
+        <p>info@alohababe.com</p>
+        <h4>
+          <Link to="/shop">
+            <a class="waves-effect white waves-light btn">
+              <i class="material-icons right">shopping_basket</i>
+              Back to Swimwear
+            </a>
+          </Link>
+        </h4>
+      </div>
+      <div className="location-container">
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card-panel white black-text left">
+              <h4>
+                <b>Shop at Our Store Location</b>
+              </h4>
               <ul>
                 <li class="collection-item">aloha babe</li>
-                <li class="collection-item">4489 Aku Rd</li>
-                <li class="collection-item">Hanalei, HI 96714</li>
-                <div style={{ float: "right", paddingRight: "5px" }}>
-                  <iframe
-                    width="80%"
-                    height="200"
-                    src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=4489%20Aku%20Road%2C%20Hanalei%2C%20HI%2096714+(aloha%20babe)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
-                    frameborder="0"
-                    scrolling="no"
-                    marginheight="0"
-                    marginwidth="0"
-                  >
-                    <a href="https://www.maps.ie/map-my-route/">
-                      Draw map route
-                    </a>
-                  </iframe>
-                </div>
+                <li class="collection-item">45-3390 Mamane St</li>
+                <li class="collection-item">Honokaa, HI 96727</li>
               </ul>
 
-              <h4>
-                <Link to="/shop">
-                  <a href="#" class="button">
-                    Back to Shopping
-                  </a>
-                </Link>
-              </h4>
+              <div style={{ float: "right", paddingRight: "5px" }}>
+                <iframe
+                  width="350vh"
+                  height="205vh"
+                  src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=45-3390%20Mamane%20St%2C%20Honokaa%2C%20HI%2096727+(aloha%20babe)&amp;ie=UTF8&amp;t=h&amp;z=20&amp;iwloc=B&amp;output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                >
+                  <a href="https://www.maps.ie/map-my-route/" />
+                </iframe>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </header>
   );
 };
 

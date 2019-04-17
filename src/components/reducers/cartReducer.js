@@ -1,181 +1,203 @@
-import WillaB from "../../images/willa-bottom.png";
-import WillaT from "../../images/willa-top.png";
-import MackT from "../../images/mack-top.png";
-import MackB from "../../images/mack-bottom.png";
-import KenzaT from "../../images/kenza-top.png";
-import KenzaB from "../../images/kenza-bottom.png";
-import GreerT from "../../images/greer-top.png";
-import GreerB from "../../images/greer-bottom.png";
-import BootsT from "../../images/boots-top.png";
-import BootsB from "../../images/boots-bottom.png";
-import MaxT from "../../images/max-top.png";
-import MaxB from "../../images/max-bottom.png";
-import SadieT from "../../images/sadie-top.png";
-import SadieB from "../../images/sadie-bottom.png";
-import SaraT from "../../images/sara-top.png";
-import SaraB from "../../images/sara-bottom.png";
+import AlohaB from "../../images/aloha-bottom.png";
+import AlohaT from "../../images/aloha-top.png";
+import LuauT from "../../images/luau-top.png";
+import LuauB from "../../images/luau-bottom.png";
+import MahaloT from "../../images/mahalo-top.png";
+import MahaloB from "../../images/mahalo-bottom.png";
+import HulaT from "../../images/hula-top.png";
+import HulaB from "../../images/hula-bottom.png";
+import OhanaT from "../../images/ohana-top.png";
+import OhanaB from "../../images/ohana-bottom.png";
+import HonuT from "../../images/honu-top.png";
+import HonuB from "../../images/honu-bottom.png";
+import AkahiT from "../../images/akahi-top.png";
+import AkahiB from "../../images/akahi-bottom.png";
+import MoanaT from "../../images/moana-top.png";
+import MoanaB from "../../images/moana-bottom.png";
+import ShakaT from "../../images/shaka-top.png";
+import ShakaB from "../../images/shaka-bottom.png";
 const initState = {
   items: [
     {
       id: 1,
-      title: "willa bottom",
+      title: "aloha bottom",
       category: "bottom",
       desc:
-        "Our Willa bottom is the perfect tanning style with skimpy coverage through the back and minimal side straps. The low-rise briefs have a seamless finish with a soft elasticated waistband to flatter your hips.",
+        "Our aloha bottom is the perfect tanning style with skimpy coverage through the back and minimal side straps. The low-rise briefs have a seamless finish with a soft elasticated waistband to flatter your hips.",
 
-      img: WillaB,
+      img: AlohaB,
       price: 80,
       size: "XS  S  M  L"
     },
     {
       id: 2,
-      title: "willa top",
+      title: "aloha top",
       category: "top",
       desc:
         "This braided beauty features peek-a-boo cutouts in the center and sides with a tie back for a custom fit.",
 
-      img: WillaT,
+      img: AlohaT,
       price: 80,
       size: "XS  S  M  L"
     },
     {
       id: 3,
-      title: "kenza top",
+      title: "mahalo top",
       category: "top",
       desc:
-        "She's sugar and spice and everything we've ever dreamed of. The Kenza top includes adjustable and removable straps, with a unique knot feature in the front for a custom fit. We already know you'll fall in love with this supportive beaut.",
-      img: KenzaT,
+        "She's sugar and spice and everything we've ever dreamed of. The mahalo top includes adjustable and removable straps, with a unique knot feature in the front for a custom fit. We already know you'll fall in love with this supportive beaut.",
+      img: MahaloT,
       price: 90,
       size: "XS  S  M  L"
     },
     {
       id: 4,
-      title: "kenza bottom",
+      title: "mahalo bottom",
       category: "bottom",
 
       desc:
         "The high-leg style we've been waiting for. The Enzo bottom has no competition - with an alluring V-shape she's in a league of her own.",
-      img: KenzaB,
+      img: MahaloB,
       price: 80,
       size: "XS  S  M  L"
     },
     {
       id: 5,
-      title: "mackenzie top",
+      title: "luau top",
       category: "top",
       desc:
-        "Meet the Mackenzie top. This romantic bikini top features a sultry front cut-out, girly ruffle edge, and adjustable back straps for a fit that's certain to flaunt it all.",
-      img: MackT,
+        "Meet the luau top. This romantic bikini top features a sultry front cut-out, girly ruffle edge, and adjustable back straps for a fit that's certain to flaunt it all.",
+      img: LuauT,
       price: 80,
       size: "XS  S  M  L"
     },
     {
       id: 6,
-      title: "mackenzie bottom",
+      title: "luau bottom",
       category: "bottom",
       desc:
-        "Featuring a high cut leg and adjustable tie sides, the Mackenzie skimpy bottom will accentuate what you've got. Pair her back with any of our luxe stretch top and let's just say, you'll thank us later.",
-      img: MackB,
+        "Featuring a high cut leg and adjustable tie sides, the luau skimpy bottom will accentuate what you've got. Pair her back with any of our luxe stretch top and let's just say, you'll thank us later.",
+      img: LuauB,
       price: 80,
       size: "XS  S  M  L"
     },
     {
       id: 7,
-      title: "max top",
+      title: "honu top",
       category: "top",
       desc:
         "Casual-cool cropped raglan style top with ultra-feminine knotted front in our signature luxe nylon swim fabric. Finished with a collar neck and flattering cap sleeves.",
-      img: MaxT,
+      img: HonuT,
       price: 100,
       size: "XS  S  M  L"
     },
     {
       id: 8,
-      title: "max bottom",
+      title: "honu bottom",
       category: "bottom",
       desc:
-        "The next big trend in swimwear, the high cut bottom. Our Max bottom is simple yet stunning with a high cut fit and cheeky coverage in back with center seam that hugs your curves in all the right places.",
-      img: MaxB,
+        "The next big trend in swimwear, the high cut bottom. Our honu bottom is simple yet stunning with a high cut fit and cheeky coverage in back with center seam that hugs your curves in all the right places.",
+      img: HonuB,
       price: 85,
       size: "XS  S  M  L"
     },
     {
       id: 9,
-      title: "boots top",
+      title: "ohana top",
       category: "top",
       desc:
-        "This top is a major crowd-pleaser, and rightfully so. The Boots top features our luxe ribbed fabric with thin, adjustable straps that will definitely highlight the shoulders and give the girls a much desired boost.",
-      img: BootsT,
+        "This top is a major crowd-pleaser, and rightfully so. The ohana top features our luxe ribbed fabric with thin, adjustable straps that will definitely highlight the shoulders and give the girls a much desired boost.",
+      img: OhanaT,
       price: 80,
       size: "XS  S  M  L"
     },
     {
       id: 10,
-      title: "boots bottom",
+      title: "ohana bottom",
       category: "bottom",
       desc:
         "This skimpy, high leg fit is everything. It'll hug your curves in all the right places and perfectly accentuate the booty. You're welcome.",
-      img: BootsB,
+      img: OhanaB,
       price: 80,
       size: "XS  S  M  L"
     },
     {
       id: 11,
-      title: "greer top",
+      title: "hula top",
       category: "top",
       desc:
-        "What's knot to love about the Greer top? The ultra flattering low scoop neck is finished with a sexy knotted front detail and adjustable straps for a custom fit.",
-      img: GreerT,
+        "What's knot to love about the hula top? The ultra flattering low scoop neck is finished with a sexy knotted front detail and adjustable straps for a custom fit.",
+      img: HulaT,
       price: 90,
       size: "XS  S  M  L"
     },
     {
       id: 12,
-      title: "greer bottom",
+      title: "hula bottom",
       category: "bottom",
       desc:
-        "We're obsessed with the figure hugging fit of the Greer bottom that gives your backside major bragging rights. This ribbed bottom features a seam down the middle back and cheeky coverage.",
-      img: GreerB,
+        "We're obsessed with the figure hugging fit of the hula bottom that gives your backside major bragging rights. This ribbed bottom features a seam down the middle back and cheeky coverage.",
+      img: HulaB,
       price: 80,
       size: "XS  S  M  L"
     },
     {
       id: 13,
-      title: "sadie top",
+      title: "akahi top",
       category: "top",
       desc:
-        "We're totally obsessing over this bandeau style top. Ultra thin, adjustable straps add a delicate, feminine finishing touch. Pair with our intricate little Sadie bottoms for your favorite teeny bikini.",
-      img: SadieT,
+        "We're totally obsessing over this bandeau style top. Ultra thin, adjustable straps add a delicate, feminine finishing touch. Pair with our intricate little akahi bottoms for your favorite teeny bikini.",
+      img: AkahiT,
       price: 80,
       size: "XS  S  M  L"
     },
     {
       id: 14,
-      title: "sadie bottom",
+      title: "akahi bottom",
       category: "bottom",
       desc:
         "Our itsiest bitsiest bikini bottom to date with added rose gold rings for some dainty detailing on both the front and back. The versatile soft elasticated skinny strap waistband is designed to sit low on the hips, or adjust a little higher for an on-trend, high-cut silhouette.",
-      img: SadieB,
+      img: AkahiB,
       price: 80,
       size: "XS  S  M  L"
     },
     {
       id: 15,
-      title: "sara top",
+      title: "moana top",
       category: "top",
       desc:
-        "We're totally obsessing over this bandeau style top. Ultra thin, adjustable straps add a delicate, feminine finishing touch. Pair with our intricate little Sadie bottoms for your favorite teeny bikini.",
-      img: SaraT,
+        "We're totally obsessing over this bandeau style top. Ultra thin, adjustable straps add a delicate, feminine finishing touch. Pair with our intricate little moana bottoms for your favorite teeny bikini.",
+      img: MoanaT,
       price: 80,
       size: "XS  S  M  L"
     },
     {
       id: 16,
-      title: "sara bottom",
+      title: "moana bottom",
       category: "bottom",
       desc:
         "Our itsiest bitsiest bikini bottom to date with added rose gold rings for some dainty detailing on both the front and back. The versatile soft elasticated skinny strap waistband is designed to sit low on the hips, or adjust a little higher for an on-trend, high-cut silhouette.",
-      img: SaraB,
+      img: MoanaB,
+      price: 80,
+      size: "XS  S  M  L"
+    },
+    {
+      id: 17,
+      title: "shaka top",
+      category: "top",
+      desc:
+        "We're totally obsessing over this bandeau style top. Ultra thin, adjustable straps add a delicate, feminine finishing touch. Pair with our intricate little shaka bottoms for your favorite teeny bikini.",
+      img: ShakaT,
+      price: 80,
+      size: "XS  S  M  L"
+    },
+    {
+      id: 18,
+      title: "shaka bottom",
+      category: "bottom",
+      desc:
+        "Our itsiest bitsiest bikini bottom to date with added rose gold rings for some dainty detailing on both the front and back. The versatile soft elasticated skinny strap waistband is designed to sit low on the hips, or adjust a little higher for an on-trend, high-cut silhouette.",
+      img: ShakaB,
       price: 80,
       size: "XS  S  M  L"
     }
@@ -186,164 +208,184 @@ const initState = {
   filterArray: [
     {
       id: 1,
-      title: "willa bottom",
+      title: "aloha bottom",
       category: "bottom",
       desc:
-        "Our Willa bottom is the perfect tanning style with skimpy coverage through the back and minimal side straps. The low-rise briefs have a seamless finish with a soft elasticated waistband to flatter your hips.",
+        "Our aloha bottom is the perfect tanning style with skimpy coverage through the back and minimal side straps. The low-rise briefs have a seamless finish with a soft elasticated waistband to flatter your hips.",
 
-      img: WillaB,
+      img: AlohaB,
       price: 80,
       size: "XS  S  M  L"
     },
     {
       id: 2,
-      title: "willa top",
+      title: "aloha top",
       category: "top",
       desc:
         "This braided beauty features peek-a-boo cutouts in the center and sides with a tie back for a custom fit.",
 
-      img: WillaT,
+      img: AlohaT,
       price: 80,
       size: "XS  S  M  L"
     },
     {
       id: 3,
-      title: "kenza top",
+      title: "mahalo top",
       category: "top",
       desc:
-        "She's sugar and spice and everything we've ever dreamed of. The Kenza top includes adjustable and removable straps, with a unique knot feature in the front for a custom fit. We already know you'll fall in love with this supportive beaut.",
-      img: KenzaT,
+        "She's sugar and spice and everything we've ever dreamed of. The mahalo top includes adjustable and removable straps, with a unique knot feature in the front for a custom fit. We already know you'll fall in love with this supportive beaut.",
+      img: MahaloT,
       price: 90,
       size: "XS  S  M  L"
     },
     {
       id: 4,
-      title: "kenza bottom",
+      title: "mahalo bottom",
       category: "bottom",
 
       desc:
-        "The high-leg style we've been waiting for. The Enzo bottom has no competition - with an alluring V-shape she's in a league of her own.",
-      img: KenzaB,
+        "The high-leg style we've been waiting for. The mahalo bottom has no competition - with an alluring V-shape she's in a league of her own.",
+      img: MahaloB,
       price: 80,
       size: "XS  S  M  L"
     },
     {
       id: 5,
-      title: "mackenzie top",
+      title: "luau top",
       category: "top",
       desc:
-        "Meet the Mackenzie top. This romantic bikini top features a sultry front cut-out, girly ruffle edge, and adjustable back straps for a fit that's certain to flaunt it all.",
-      img: MackT,
+        "Meet the luau top. This romantic bikini top features a sultry front cut-out, girly ruffle edge, and adjustable back straps for a fit that's certain to flaunt it all.",
+      img: LuauT,
       price: 80,
       size: "XS  S  M  L"
     },
     {
       id: 6,
-      title: "mackenzie bottom",
+      title: "luau bottom",
       category: "bottom",
       desc:
-        "Featuring a high cut leg and adjustable tie sides, the Mackenzie skimpy bottom will accentuate what you've got. Pair her back with any of our luxe stretch top and let's just say, you'll thank us later.",
-      img: MackB,
+        "Featuring a high cut leg and adjustable tie sides, the luau skimpy bottom will accentuate what you've got. Pair her back with any of our luxe stretch top and let's just say, you'll thank us later.",
+      img: LuauB,
       price: 80,
       size: "XS  S  M  L"
     },
     {
       id: 7,
-      title: "max top",
+      title: "honu top",
       category: "top",
       desc:
         "Casual-cool cropped raglan style top with ultra-feminine knotted front in our signature luxe nylon swim fabric. Finished with a collar neck and flattering cap sleeves.",
-      img: MaxT,
+      img: HonuT,
       price: 100,
       size: "XS  S  M  L"
     },
     {
       id: 8,
-      title: "max bottom",
+      title: "honu bottom",
       category: "bottom",
       desc:
-        "The next big trend in swimwear, the high cut bottom. Our Max bottom is simple yet stunning with a high cut fit and cheeky coverage in back with center seam that hugs your curves in all the right places.",
-      img: MaxB,
+        "The next big trend in swimwear, the high cut bottom. Our honu bottom is simple yet stunning with a high cut fit and cheeky coverage in back with center seam that hugs your curves in all the right places.",
+      img: HonuB,
       price: 85,
       size: "XS  S  M  L"
     },
     {
       id: 9,
-      title: "boots top",
+      title: "ohana top",
       category: "top",
       desc:
-        "This top is a major crowd-pleaser, and rightfully so. The Boots top features our luxe ribbed fabric with thin, adjustable straps that will definitely highlight the shoulders and give the girls a much desired boost.",
-      img: BootsT,
+        "This top is a major crowd-pleaser, and rightfully so. The ohana top features our luxe ribbed fabric with thin, adjustable straps that will definitely highlight the shoulders and give the girls a much desired boost.",
+      img: OhanaT,
       price: 80,
       size: "XS  S  M  L"
     },
     {
       id: 10,
-      title: "boots bottom",
+      title: "ohana bottom",
       category: "bottom",
       desc:
         "This skimpy, high leg fit is everything. It'll hug your curves in all the right places and perfectly accentuate the booty. You're welcome.",
-      img: BootsB,
+      img: OhanaB,
       price: 80,
       size: "XS  S  M  L"
     },
     {
       id: 11,
-      title: "greer top",
+      title: "hula top",
       category: "top",
       desc:
-        "What's knot to love about the Greer top? The ultra flattering low scoop neck is finished with a sexy knotted front detail and adjustable straps for a custom fit.",
-      img: GreerT,
+        "What's knot to love about the hula top? The ultra flattering low scoop neck is finished with a sexy knotted front detail and adjustable straps for a custom fit.",
+      img: HulaT,
       price: 90,
       size: "XS  S  M  L"
     },
     {
       id: 12,
-      title: "greer bottom",
+      title: "hula bottom",
       category: "bottom",
       desc:
-        "We're obsessed with the figure hugging fit of the Greer bottom that gives your backside major bragging rights. This ribbed bottom features a seam down the middle back and cheeky coverage.",
-      img: GreerB,
+        "We're obsessed with the figure hugging fit of the hula bottom that gives your backside major bragging rights. This ribbed bottom features a seam down the middle back and cheeky coverage.",
+      img: HulaB,
       price: 80,
       size: "XS  S  M  L"
     },
     {
       id: 13,
-      title: "sadie top",
+      title: "akahi top",
       category: "top",
       desc:
-        "We're totally obsessing over this bandeau style top. Ultra thin, adjustable straps add a delicate, feminine finishing touch. Pair with our intricate little Sadie bottoms for your favorite teeny bikini.",
-      img: SadieT,
+        "We're totally obsessing over this bandeau style top. Ultra thin, adjustable straps add a delicate, feminine finishing touch. Pair with our intricate little akahi bottoms for your favorite teeny bikini.",
+      img: AkahiT,
       price: 80,
       size: "XS  S  M  L"
     },
     {
       id: 14,
-      title: "sadie bottom",
+      title: "akahi bottom",
       category: "bottom",
       desc:
         "Our itsiest bitsiest bikini bottom to date with added rose gold rings for some dainty detailing on both the front and back. The versatile soft elasticated skinny strap waistband is designed to sit low on the hips, or adjust a little higher for an on-trend, high-cut silhouette.",
-      img: SadieB,
+      img: AkahiB,
       price: 80,
       size: "XS  S  M  L"
     },
     {
       id: 15,
-      title: "sara top",
+      title: "moana top",
       category: "top",
       desc:
-        "We're totally obsessing over this bandeau style top. Ultra thin, adjustable straps add a delicate, feminine finishing touch. Pair with our intricate little Sadie bottoms for your favorite teeny bikini.",
-      img: SaraT,
+        "We're totally obsessing over this bandeau style top. Ultra thin, adjustable straps add a delicate, feminine finishing touch. Pair with our intricate little moana bottoms for your favorite teeny bikini.",
+      img: MoanaT,
       price: 80,
       size: "XS  S  M  L"
     },
     {
       id: 16,
-      title: "sara bottom",
+      title: "moana bottom",
       category: "bottom",
       desc:
         "Our itsiest bitsiest bikini bottom to date with added rose gold rings for some dainty detailing on both the front and back. The versatile soft elasticated skinny strap waistband is designed to sit low on the hips, or adjust a little higher for an on-trend, high-cut silhouette.",
-      img: SaraB,
+      img: MoanaB,
+      price: 80,
+      size: "XS  S  M  L"
+    },
+    {
+      id: 17,
+      title: "shaka top",
+      category: "top",
+      desc:
+        "Feelin' flirty? We know the feeling, so let us introduce you to the shaka top. Featuring a plunging v-cut neckline, flirty ruffle detail, and adjustable front tie - we guarantee shaka will bring out the best of you (and your girls).",
+      img: ShakaT,
+      price: 80,
+      size: "XS  S  M  L"
+    },
+    {
+      id: 18,
+      title: "shaka bottom",
+      category: "bottom",
+      desc:
+        "Perfect for the beach or poolside, this charming bottom features a low front rise, side ruffles, and skimpy back coverage. Pair her back with our shaka top for an ultra femme finishing touch.",
+      img: ShakaB,
       price: 80,
       size: "XS  S  M  L"
     }

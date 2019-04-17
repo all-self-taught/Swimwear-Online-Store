@@ -33,8 +33,8 @@ const Footer = () => {
         <div class="container">
           <div class="row">
             <div class="col s12">
-              <h4>follow aloha babe</h4>
-              <p>Follow us on social media for special offers</p>
+              <h3>FOLLOW US ON SOCIAL MEDIA</h3>
+              <p>Be in the loop with aloha babe </p>
               <a
                 href="https://www.instagram.com/alohababe.co/?hl=en"
                 target="_blank"

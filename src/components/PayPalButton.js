@@ -10,7 +10,7 @@ class MyApp extends React.Component {
     const onSuccess = payment => {
       // Congratulation, it came here means everything's fine!
       alert(
-        "The payment was successful! Thanks for shopping at aloha babe!",
+        "Your order has been submitted successfully 👙. Mahalo for shopping with us! xoxo, aloha babe",
         payment
       );
       this.props.clearCart();

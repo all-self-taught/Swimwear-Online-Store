@@ -26,22 +26,22 @@ const initState = {
   items: [
     {
       id: 1,
-      title: "aloha bottom",
-      category: "bottom",
-      desc:
-        "Our aloha bottom is the perfect tanning style with skimpy coverage through the back and minimal side straps. The low-rise briefs have a seamless finish with a soft elasticated waistband to flatter your hips.",
-      img: AlohaB,
-      price: 80,
-      size: "[ XS,  S,  M,  L ]"
-    },
-    {
-      id: 2,
       title: "aloha top",
       category: "top",
       desc:
         "This braided beauty features peek-a-boo cutouts in the center and sides with a tie back for a custom fit.",
       img: AlohaT,
       price: 90,
+      size: "[ XS,  S,  M,  L ]"
+    },
+    {
+      id: 2,
+      title: "aloha bottom",
+      category: "bottom",
+      desc:
+        "Our aloha bottom is the perfect tanning style with skimpy coverage through the back and minimal side straps. The low-rise briefs have a seamless finish with a soft elasticated waistband to flatter your hips.",
+      img: AlohaB,
+      price: 80,
       size: "[ XS,  S,  M,  L ]"
     },
     {
@@ -272,23 +272,21 @@ const initState = {
   filterArray: [
     {
       id: 1,
-      title: "aloha bottom",
-      category: "bottom",
-      desc:
-        "Our aloha bottom is the perfect tanning style with skimpy coverage through the back and minimal side straps. The low-rise briefs have a seamless finish with a soft elasticated waistband to flatter your hips.",
-
-      img: AlohaB,
-      price: 80,
-      size: "[ XS,  S,  M,  L ]"
-    },
-    {
-      id: 2,
       title: "aloha top",
       category: "top",
       desc:
         "This braided beauty features peek-a-boo cutouts in the center and sides with a tie back for a custom fit.",
-
       img: AlohaT,
+      price: 90,
+      size: "[ XS,  S,  M,  L ]"
+    },
+    {
+      id: 2,
+      title: "aloha bottom",
+      category: "bottom",
+      desc:
+        "Our aloha bottom is the perfect tanning style with skimpy coverage through the back and minimal side straps. The low-rise briefs have a seamless finish with a soft elasticated waistband to flatter your hips.",
+      img: AlohaB,
       price: 80,
       size: "[ XS,  S,  M,  L ]"
     },

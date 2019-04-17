@@ -7,23 +7,6 @@ import Press from "../FooterLinks/Press";
 const Footer = () => {
   return (
     <footer class="page-footer black">
-      <div class="container">
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text left">company</h5>
-          <br />
-          <br />
-          <div class="links">
-            <Link to="/story">Our Story</Link>
-            <a class="grey-text" href="#!" />
-            <br />
-            <Link to="/contact">Contact Us</Link>
-            <a class="grey-text" href="#!" />
-            <br />
-            <Link to="/press">Press</Link>
-            <a class="grey-text" href="#!" />
-          </div>
-        </div>
-      </div>
       <section class="section section-follow black white-text center">
         <div class="container">
           <div class="row">
@@ -50,6 +33,23 @@ const Footer = () => {
           </div>
         </div>
       </section>
+      <div class="container">
+        <div class="grid grid--no-gutters flex small--flex-column site-footer__flex">
+          <h5 class="black-text left">company</h5>
+          <br />
+          <br />
+          <div class="links">
+            <Link to="/story">Our Story</Link>
+            <a class="grey-text" href="#!" />
+            <br />
+            <Link to="/contact">Contact Us</Link>
+            <a class="grey-text" href="#!" />
+            <br />
+            <Link to="/press">Press</Link>
+            <a class="grey-text" href="#!" />
+          </div>
+        </div>
+      </div>
 
       <div class="footer-copyright">
         <div class="container">

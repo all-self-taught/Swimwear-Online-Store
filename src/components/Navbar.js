@@ -11,7 +11,7 @@ const Navbar = () => {
             </div>
             <ul className="right hide-on-med-and-down">
               <li>
-                <Link to="/shop">Shop Swim</Link>
+                <Link to="/shop">SHOP SWIM</Link>
               </li>
               <li>
                 <Link to="/">
@@ -22,6 +22,11 @@ const Navbar = () => {
               <li>
                 <Link to="/testimonial">
                   <i className="material-icons">favorite</i>
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact">
+                  <i className="material-icons">email</i>
                 </Link>
               </li>
               <li>

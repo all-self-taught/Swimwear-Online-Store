@@ -32,6 +32,7 @@ const LandingPage = () => {
           <Gallery />
         </div>
       </section>
+      <hr />
       <section id="section-b">
         <p>
           <h1>

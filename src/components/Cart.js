@@ -25,6 +25,8 @@ class Cart extends Component {
     this.props.clearCart();
   };
   render() {
+    console.log("this.props.items", this.props.items);
+
     let addedItems = this.props.items.length ? (
       this.props.items.map(item => {
         return (
@@ -78,7 +80,7 @@ class Cart extends Component {
     ) : (
       <p>
         Your bag is currently empty...
-        <i class="small material-icons">sentiment_very_dissatisfied</i>
+        <i className="small material-icons">sentiment_very_dissatisfied</i>
       </p>
     );
     return (
@@ -108,9 +110,6 @@ const mapDispatchToProps = dispatch => {
     },
     subtractQuantity: id => {
       dispatch(subtractQuantity(id));
-    },
-    clearCart: () => {
-      dispatch(clearCart());
     }
   };
 };

@@ -5,15 +5,13 @@ import LandingPage from "./components/LandingPage";
 import Navbar from "./components/Navbar";
 import Shop from "./components/Shop";
 import Cart from "./components/Cart";
-import Contact from "./FooterLinks/Contact";
-import Story from "./FooterLinks/Story";
-import Press from "./FooterLinks/Press";
+import Contact from "./components/FooterLinks/Contact";
+import Story from "./components/FooterLinks/Story";
+import Press from "./components/FooterLinks/Press";
 import Testimonial from "./components/Testimonial";
 
 // import Css from "./App.css";
 import Footer from "./components/Footer";
-// import Filter from "./components/Filter";
-// import Signup from "./components/Signup";
 
 class App extends Component {
   constructor() {

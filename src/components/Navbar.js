@@ -2,32 +2,32 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
-    <div class="navbar-fixed">
-      <nav class="black">
-        <div class="container">
-          <div class="nav-wrapper">
-            <div class="brand-logo">
-              <i class="small material-icons">filter_vintage</i>aloha babe
+    <div className="navbar-fixed">
+      <nav className="black">
+        <div className="container">
+          <div className="nav-wrapper">
+            <div className="brand-logo">
+              <i className="small material-icons">filter_vintage</i>aloha babe
             </div>
-            <ul class="right hide-on-med-and-down">
+            <ul className="right hide-on-med-and-down">
               <li>
-                <a href="/shop">Shop Swim</a>
+                <Link to="/shop">Shop Swim</Link>
               </li>
               <li>
-                <a href="/">
+                <Link to="/">
                   <i className="material-icons">home</i>
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a href="/testimonial">
+                <Link to="/testimonial">
                   <i className="material-icons">favorite</i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/cart">
+                <Link to="/cart">
                   <i className="material-icons">shopping_basket</i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -60,7 +60,7 @@ const initState = {
       category: "bottom",
 
       desc:
-        "The high-leg style we've been waiting for. The Enzo bottom has no competition - with an alluring V-shape she's in a league of her own.",
+        "The high-leg style we've been waiting for. The mahalo bottom has no competition - with an alluring V-shape she's in a league of her own.",
       img: MahaloB,
       price: 80,
       size: "[ XS,  S,  M,  L ]"
@@ -190,7 +190,7 @@ const initState = {
       title: "shaka top",
       category: "top",
       desc:
-        "We're totally obsessing over this bandeau style top. Ultra thin, adjustable straps add a delicate, feminine finishing touch. Pair with our intricate little shaka bottoms for your favorite teeny bikini.",
+        "Feelin' flirty? We know the feeling, so let us introduce you to the shaka top. Featuring a plunging v-cut neckline, flirty ruffle detail, and adjustable front tie - we guarantee shaka will bring out the best of you (and your girls).",
       img: ShakaT,
       price: 80,
       size: "[ XS,  S,  M,  L ]"
@@ -200,7 +200,7 @@ const initState = {
       title: "shaka bottom",
       category: "bottom",
       desc:
-        "Our itsiest bitsiest bikini bottom to date with added rose gold rings for some dainty detailing on both the front and back. The versatile soft elasticated skinny strap waistband is designed to sit low on the hips, or adjust a little higher for an on-trend, high-cut silhouette.",
+        "Perfect for the beach or poolside, this charming bottom features a low front rise, side ruffles, and skimpy back coverage. Pair her back with our shaka top for an ultra femme finishing touch.",
       img: ShakaB,
       price: 80,
       size: "[ XS,  S,  M,  L ]"
@@ -517,21 +517,24 @@ const initState = {
 const cartReducer = (state = initState, action) => {
   //INSIDE HOME COMPONENT
   if (action.type === "ADD_TO_CART") {
+    console.log("state1", state);
     alert("Added to bag successfully! 👙 ");
     let addedItem = state.items.find(item => item.id === action.id);
     //check if the action id exists in the addedItems
     let existed_item = state.addedItems.find(item => action.id === item.id);
     if (existed_item) {
       addedItem.quantity += 1;
+      console.log("state2", state);
       return {
         ...state,
         total: state.total + addedItem.price
       };
     } else {
+      console.log("state3", state);
+
       addedItem.quantity = 1;
       //calculating the total
       let newTotal = state.total + addedItem.price;
-
       return {
         ...state,
         addedItems: [...state.addedItems, addedItem],

@@ -7,23 +7,11 @@ class Shop extends Component {
     this.props.addToCart(id);
   };
 
-  findTop = () => {
-    let foundTops = [...this.props.items].filter(item =>
-      item.category.includes("top")
-    );
-    console.log("foundTops", foundTops);
-  };
-  findBottom = () => {
-    let foundBottoms = [...this.props.items].filter(item =>
-      item.category.includes("bottom")
-    );
-    console.log("foundBottoms", foundBottoms);
-  };
-
   render() {
     console.log("props.items: ", this.props.items);
+    console.log("props.addedItems: ", this.props.addedItems);
 
-    let itemList = this.props.filterArray.map(item => {
+    let itemList = this.props.items.map(item => {
       return (
         <div class="row">
           <div class="col s12 m6">
@@ -82,24 +70,7 @@ class Shop extends Component {
 
     return (
       <div className="container">
-        <h4 class="number">{this.props.items.length} bikinis found</h4>
-        <button
-          className="waves-effect white waves-light btn"
-          onClick={() => {
-            this.findTop();
-          }}
-        >
-          Tops
-        </button>
-        <button
-          className="waves-effect white waves-light btn"
-          onClick={() => {
-            this.findBottom();
-          }}
-        >
-          Bottoms
-        </button>
-
+        <h4>{this.props.items.length} bikinis found</h4>
         <h3 className="center">swimwear</h3>
         <div className="box">{itemList}</div>
       </div>
@@ -109,7 +80,7 @@ class Shop extends Component {
 const mapStateToProps = state => {
   return {
     items: state.items,
-    filterArray: state.filterArray
+    addedItems: state.addedItems
   };
 };
 const mapDispatchToProps = dispatch => {

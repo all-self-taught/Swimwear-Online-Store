@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import PayPalButton from "./PayPalButton";
-// import Cart from "./Cart";
 
 class Order extends Component {
   componentWillUnmount() {

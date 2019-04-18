@@ -10,9 +10,9 @@ const LandingPage = () => {
     <div className="home-container">
       <header id="showcase">
         <p>Say aloha to our new bikini collection </p>
-        <a href="/shop" class="button">
+        <Link to="/shop" class="button">
           SHOP THE COLLECTION
-        </a>
+        </Link>
       </header>
       <div>
         <Collection />

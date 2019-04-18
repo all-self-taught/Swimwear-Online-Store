@@ -1,5 +1,3 @@
-// import { Link } from "react-router-dom";
-
 //add cart action
 export const addToCart = id => {
   return {

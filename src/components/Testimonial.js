@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+// import { Link } from "react-router-dom";
 
 const Testimonial = () => {
   return (
@@ -10,7 +10,7 @@ const Testimonial = () => {
             <p class="section__love">WE LOVE OUR ALOHA BABES...</p>
 
             <h2 class="section__intro">
-              Get to know our featured #alohababe and shop her look!
+              Get to know this month's featured #alohababe and shop her look!
               <br />
             </h2>
           </div>

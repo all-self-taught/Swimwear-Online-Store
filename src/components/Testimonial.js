@@ -16,10 +16,7 @@ const Testimonial = () => {
               src="https://player.vimeo.com/video/206077155?title=0&amp;byline=0&amp;portrait=0&amp;background=1"
               width="840"
               height="438"
-              frameborder="0"
-              webkitallowfullscreen=""
-              mozallowfullscreen=""
-              allowfullscreen=""
+              frameBorder="0"
             />
           </div>
         </center>

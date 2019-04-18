@@ -45,10 +45,10 @@ const Contact = () => {
                   width="350vh"
                   height="205vh"
                   src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=45-3390%20Mamane%20St%2C%20Honokaa%2C%20HI%2096727+(aloha%20babe)&amp;ie=UTF8&amp;t=h&amp;z=20&amp;iwloc=B&amp;output=embed"
-                  frameborder="0"
+                  frameBorder="0"
                   scrolling="no"
-                  marginheight="0"
-                  marginwidth="0"
+                  marginHeight="0"
+                  marginWidth="0"
                 >
                   <a href="https://www.maps.ie/map-my-route/" />
                 </iframe>

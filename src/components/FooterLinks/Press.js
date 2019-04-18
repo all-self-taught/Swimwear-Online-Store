@@ -10,8 +10,8 @@ const Press = () => {
       <section id="section-a">
         <h4>
           <Link to="/shop">
-            <a class="waves-effect white waves-light btn">
-              <i class="material-icons right">shopping_basket</i>
+            <a className="waves-effect white waves-light btn">
+              <i className="material-icons right">shopping_basket</i>
               Back to Swimwear
             </a>
           </Link>

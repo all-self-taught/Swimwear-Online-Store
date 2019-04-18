@@ -10,7 +10,7 @@ const LandingPage = () => {
     <div className="home-container">
       <header id="showcase">
         <p>Say aloha to our new bikini collection </p>
-        <Link to="/shop" class="button">
+        <Link to="/shop" className="button">
           SHOP THE COLLECTION
         </Link>
       </header>
@@ -18,7 +18,7 @@ const LandingPage = () => {
         <Collection />
       </div>
 
-      <div class="hero--video-block video-wrapper small--hide">
+      <div className="hero--video-block video-wrapper small--hide">
         <iframe
           src="https://player.vimeo.com/video/331042234?autoplay=1&loop=1&title=0&byline=0&portrait=0&background=1"
           width="1920"

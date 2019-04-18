@@ -66,7 +66,7 @@ class Cart extends Component {
                 </Link>
               </div>
               <button
-                className="waves-effect waves-light btn"
+                className="waves-effect waves-light btn black white-text"
                 onClick={() => {
                   this.handleRemove(item.id);
                 }}

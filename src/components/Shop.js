@@ -13,8 +13,8 @@ class Shop extends Component {
 
     let itemList = this.props.items.map(item => {
       return (
-        <div class="row">
-          <div class="col s12 m6">
+        <div className="row">
+          <div className="col s12 m6">
             <div className="card" key={item.id}>
               <div className="card-image">
                 <img src={item.img} alt="" />
@@ -28,17 +28,17 @@ class Shop extends Component {
                   <i className="material-icons">shopping_basket</i>
                 </span>
               </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">
+              <div className="card-content">
+                <span className="card-title activator grey-text text-darken-4">
                   {item.title}
                   <div>${item.price}</div>
-                  <i class="material-icons right">more_horiz</i>
+                  <i className="material-icons right">more_horiz</i>
                 </span>
               </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">
+              <div className="card-reveal">
+                <span className="card-title grey-text text-darken-4">
                   {item.title}
-                  <i class="material-icons left">close</i>
+                  <i className="material-icons left">close</i>
                 </span>
                 <p>
                   <div className="card-content">

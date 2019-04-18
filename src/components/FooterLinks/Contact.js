@@ -4,40 +4,40 @@ import iframe from "react-iframe";
 
 const Contact = () => {
   return (
-    <header id="contact" class="section-contact">
-      <div class="container">
+    <header id="contact" className="section-contact">
+      <div className="container">
         <h1>
           <center>Contact Us</center>
         </h1>
       </div>
-      <div class="card-panel white black-text">
-        <i class="material-icons small"> call</i>
+      <div className="card-panel white black-text">
+        <i className="material-icons small"> call</i>
         <h4>Call Us</h4>
         <p>(808)-224-2240 Monday-Friday from 8am-4pm Standard Hawaii time</p>
         <br />
-        <i class="material-icons small"> email</i>
+        <i className="material-icons small"> email</i>
         <h4>Email Us</h4>
         <p>info@alohababe.com</p>
         <h4>
           <Link to="/shop">
-            <a class="waves-effect white waves-light btn">
-              <i class="material-icons right">shopping_basket</i>
+            <a className="waves-effect white waves-light btn">
+              <i className="material-icons right">shopping_basket</i>
               Back to Swimwear
             </a>
           </Link>
         </h4>
       </div>
       <div className="location-container">
-        <div class="row">
-          <div class="col s12 m6">
-            <div class="card-panel white black-text left">
+        <div className="row">
+          <div className="col s12 m6">
+            <div className="card-panel white black-text left">
               <h4>
                 <b>Shop at Our Store Location</b>
               </h4>
               <ul>
-                <li class="collection-item">aloha babe</li>
-                <li class="collection-item">45-3390 Mamane St</li>
-                <li class="collection-item">Honokaa, HI 96727</li>
+                <li className="collection-item">aloha babe</li>
+                <li className="collection-item">45-3390 Mamane St</li>
+                <li className="collection-item">Honokaa, HI 96727</li>
               </ul>
 
               <div style={{ float: "right", paddingRight: "5px" }}>

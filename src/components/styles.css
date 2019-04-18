@@ -11,12 +11,30 @@ body {
   font-size: 17px;
   line-height: 1.3;
 }
-.info-main__inner {
-  position: relative;
-  margin: 15px 20px;
-  margin-bottom: 8rem !important;
+.info-main {
+  width: 80%;
+  flex: 1;
+  padding: 4%;
+  line-height: 1.5;
+  flex-direction: column !important;
+}
+/* .contact-form form-vertical {
+  float: right !important;
+  box-sizing: border-box !important;
+  display: block !important;
+  -webkit-f
+  flex-direction: column !important;
+} */
 
-  /* align-items: center; */
+.info-side {
+  min-width: 300px;
+  width: 25%;
+  background: #f7f7f7;
+  padding-top: 30px;
+  box-sizing: border-box;
+  display: block;
+  -webkit-flex-direction: column;
+  flex-direction: column;
 }
 
 .contact {
@@ -30,19 +48,27 @@ body {
 .section__love {
   font-family: "Londrina Shadow", cursive !important;
   font-size: 65px;
+  /* color: pink !important; */
+  font-weight: 800 !important;
 }
 .section__intro {
   font-family: "Londrina Shadow", cursive !important;
   font-size: 40px;
+  /* color: pink !important; */
+  font-weight: 800 !important;
 }
 .section__sup {
   font-family: "Londrina Shadow", cursive !important;
+  /* color: pink !important; */
   font-size: 38px;
+  font-weight: 800 !important;
 }
 
 .section__title {
   font-family: "Londrina Shadow", cursive !important;
   font-size: 65px;
+  /* color: pink !important; */
+  font-weight: 800 !important;
 }
 .insta {
   /* font-family: "Londrina Sketch", cursive !important; */

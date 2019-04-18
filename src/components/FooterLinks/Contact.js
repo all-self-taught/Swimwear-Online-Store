@@ -82,10 +82,10 @@ const Contact = () => {
           <br /> <br />
           <center>
             <h4>
-              <Link to="/shop">
+              <Link to="/">
                 <a className="waves-effect white waves-light btn">
-                  <i className="material-icons right">shopping_basket</i>
-                  Back to Swimwear
+                  <i className="material-icons left">home</i>
+                  BACK HOME
                 </a>
               </Link>
             </h4>

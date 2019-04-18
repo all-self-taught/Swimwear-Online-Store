@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Collection = () => {
   return (
@@ -79,10 +79,12 @@ const Collection = () => {
       <div className="row">
         <div className="col s12 center">
           <center>
-            <a href="/shop" className="btn btn-large white ">
-              <i className="material-icons left">shopping_basket</i> SHOP LATEST
-              ARRIVALS
-            </a>
+            <Link to="/shop">
+              <a className="waves-effect white waves-light btn">
+                <i className="material-icons left">shopping_basket</i>
+                SHOP LATEST ARRIVALS
+              </a>
+            </Link>
           </center>
         </div>
       </div>

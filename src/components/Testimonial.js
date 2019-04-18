@@ -1,5 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
+import { Link } from "react-router-dom";
 
 const Testimonial = () => {
   return (
@@ -104,9 +105,12 @@ const Testimonial = () => {
       <div className="row">
         <div className="col s12 center">
           <center>
-            <a href="/shop" className="btn btn-large white ">
-              <i className="material-icons left">shopping_basket</i> SHOP SWIM
-            </a>
+            <Link to="/shop">
+              <a className="waves-effect white waves-light btn white">
+                <i className="material-icons left">shopping_basket</i>
+                SHOP SWIM
+              </a>
+            </Link>
           </center>
         </div>
       </div>

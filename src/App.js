@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
 import LandingPage from "./components/LandingPage";
 import Navbar from "./components/Navbar";
 import Shop from "./components/Shop";
@@ -14,21 +13,6 @@ import Testimonial from "./components/Testimonial";
 import Footer from "./components/Footer";
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      searchTerm: "",
-      items: [],
-      filteredItems: []
-    };
-  }
-  componentDidMount() {
-    fetch("http://localhost:3000/items")
-      .then(res => res.json())
-      // .then(console.log);
-      .then(items => this.setState({ items: items, filteredItems: items }));
-  }
-
   render() {
     return (
       <BrowserRouter>

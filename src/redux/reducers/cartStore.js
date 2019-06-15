@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware } from "redux";
 import { logger } from "redux-logger";
-import ItemsData from "./ItemsData.js";
+import ItemsData from "./ItemsData.js.js";
 
 const productReducer = (
   state = {

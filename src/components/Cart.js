@@ -6,7 +6,7 @@ import {
   addQuantity,
   subtractQuantity,
   clearCart
-} from "./actions/cartActions";
+} from "../redux/actions/cartActions";
 import Order from "./Order";
 class Cart extends Component {
   //to remove the item completely

@@ -1,7 +1,9 @@
+import constants from './constants';
+
 //add cart action
 export const addToCart = id => {
   return {
-    type: "ADD_TO_CART",
+    type: constants.ADD_TO_CART,
     id
   };
 };
